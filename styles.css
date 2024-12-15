@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: gray;
+
+}
+
+.inicio{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+h2,.white{
+    color: white;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+}
+
+.columna1{
+    padding-top: 400px;
+    text-align: center;
+}
+
+.columna1 p{
+    font-size: 17px;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.columna1 h2{
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.columna1 a{
+    font-size: 24px;
+    padding: 10px;
+}
+
+.columna2{
+    padding-top: 100px;
+    width: 70%;
+}
+
+.columna2 h2{
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.columna2 p{
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.columna2 a{
+    display: block;
+    padding: 5px;
+    font-size: 19px;
+    padding-left: 0;
+    width: 100px;
+}
+
+.columna2 a:hover{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.columna1 a:hover{
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.white:hover{
+    position: relative;
+    padding-left: 10px;
+}
+
+
+@media(max-width:780px){
+    .inicio{
+        grid-template-columns: 1fr;
+    }
+    .columna1{
+        padding:0;
+        padding-top: 80px;
+    }
+    .columna2{
+        padding: 0;
+        padding-left: 24px;
+        padding-top: 32px;
+    }
+}
